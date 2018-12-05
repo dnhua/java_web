@@ -10,25 +10,38 @@
 
    	//DriverManager.getConnection("jdbc:mysql://localhost/test?user=monty&password=greatsqldb");
    		//2. 建立连接 参数一： 协议 + 访问的数据库 ， 参数二： 用户名 ， 参数三： 密码。
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> a0601f3564f81fc296f3ab20c3acd07baf76afe1
    		conn = DriverManager.getConnection("jdbc:mysql://localhost/student", "root", "root");
 
 3. 创建statement
 
    	//3. 创建statement ， 跟数据库打交道，一定需要这个对象
+	
    	st = conn.createStatement();
 
 4. 执行sql ，得到ResultSet
 
    	//4. 执行查询 ， 得到结果集
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> a0601f3564f81fc296f3ab20c3acd07baf76afe1
    		String sql = "select * from t_stu";
    		rs = st.executeQuery(sql);
 
 5. 遍历结果集
 
    	//5. 遍历查询每一条记录
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> a0601f3564f81fc296f3ab20c3acd07baf76afe1
    		while(rs.next()){
    			int id = rs.getInt("id");
    			String name = rs.getString("name");
@@ -37,7 +50,7 @@
    				
    		}
 
-6. 释放资源
+6. 释放资源 
 
 
 		if (rs != null) {
