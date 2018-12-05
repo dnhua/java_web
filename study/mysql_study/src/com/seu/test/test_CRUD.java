@@ -13,16 +13,16 @@ public class test_CRUD {
 		Statement st;
 		ResultSet rs = null;
 		try {
-			//step1 ×¢²áÇı¶¯
+			//step1 æ³¨å†Œé©±åŠ¨
 			DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-			//step2 ½¨Á¢Á¬½Ó, urlÊÇÊı¾İ¿âÁ´½Ó, ²ÎÊı2ÊÇuser, ²ÎÊı3ÊÇÃÜÂë
+			//step2 å»ºç«‹è¿æ¥, urlæ˜¯æ•°æ®åº“é“¾æ¥, å‚æ•°2æ˜¯user, å‚æ•°3æ˜¯å¯†ç 
 			conn = DriverManager.getConnection("jdbc:mysql://localhost/student", "root", "root");
-			//step3 ´´½¨statement
+			//step3 åˆ›å»ºstatement
 			st = conn.createStatement();
-			//step4 Ö´ĞĞsql, µÃµ½½á¹û¼¯
-			String sql = "select * from t_stu";		//sql Óï¾ä
+			//step4 æ‰§è¡Œsql, å¾—åˆ°ç»“æœé›†
+			String sql = "select * from t_stu";		//sql è¯­å¥
 			rs = st.executeQuery(sql);
-			//²Ù×÷  ÀıÈç±éÀú½á¹û¼¯
+			//æ“ä½œ  ä¾‹å¦‚éå†ç»“æœé›†
 			while(rs.next()){
 	   			int id = rs.getInt("id");
 	   			String name = rs.getString("name");
@@ -32,7 +32,7 @@ public class test_CRUD {
 	   		}
 		} catch (SQLException e) {
 			e.printStackTrace();
-		}finally {	//×îºóÒ»¶¨²»ÒªÍüÁËÊÍ·Års
+		}finally {	//æœ€åä¸€å®šä¸è¦å¿˜äº†é‡Šæ”¾rs
 			if(rs!=null) {
 				try {
 					rs.close();
@@ -41,8 +41,6 @@ public class test_CRUD {
 				}
 			}
 		}
-		
-		
 	}
 
 }
