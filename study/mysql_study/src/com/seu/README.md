@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 # test
+=======
+#test
+>>>>>>> 4d7697083538741f81ca480e9b968563e679aa6f
 
 test文件夹中为一些测试文件。
 test_CRUD.java 为一个基本的mysql CRUD测试文件，主要是为了测试数据库和java开发环境能够正常连接，需要jdbc的jar包。
 
+<<<<<<< HEAD
 # util
+=======
+#util
+>>>>>>> 4d7697083538741f81ca480e9b968563e679aa6f
 
 这里主要是实现了一些工具类型的类。
 
@@ -13,4 +21,8 @@ test_CRUD.java 为一个基本的mysql CRUD测试文件，主要是为了测试�
 
 **studentDao.java:** 操作学生数据库的接口。
 
+<<<<<<< HEAD
 **studentDaoImpl.java:** 实现了上述接口。
+=======
+**studentDaoImpl.java:** 实现了上述接口。
+>>>>>>> 4d7697083538741f81ca480e9b968563e679aa6f
