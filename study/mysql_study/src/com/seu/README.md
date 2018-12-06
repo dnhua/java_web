@@ -1,6 +1,8 @@
 #test
+
 test文件夹中为一些测试文件。
 test_CRUD.java 为一个基本的mysql CRUD测试文件，主要是为了测试数据库和java开发环境能够正常连接，需要jdbc的jar包。
+
 #util
 
 这里主要是实现了一些工具类型的类。
