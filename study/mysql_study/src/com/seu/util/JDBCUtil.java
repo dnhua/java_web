@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -64,6 +65,10 @@ public class JDBCUtil {
 		closeSt(st);
 		closeConn(conn);
 	}
+	public static void release(Connection conn, PreparedStatement ps) {
+		closeConn(conn);
+		closePs(ps);
+	}
 
 	
 	private static void closeRs(ResultSet rs){
@@ -87,6 +92,16 @@ public class JDBCUtil {
 			e.printStackTrace();
 		}finally{
 			st = null;
+		}
+	}
+	
+	private static void closePs(PreparedStatement ps) {
+		try {
+			ps.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}finally {
+			ps = null;
 		}
 	}
 	

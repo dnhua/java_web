@@ -1,7 +1,6 @@
 package com.seu.util;
 
 import java.util.ArrayList;
-import java.util.Vector;
 
 public interface studentDao {
 	/**
@@ -18,15 +17,15 @@ public interface studentDao {
 	/**
 	 * 删除，通过id
 	 */
-	student delete(int id);
+	boolean delete(int id);
 	
 	/**
 	 * 删除，通过student
 	 */
-	student delete(student s);
+	boolean delete(student s);
 	
 	/**
 	 * 更新
 	 */
-	boolean update(student s);
+	boolean update(student s, int id);
 }
