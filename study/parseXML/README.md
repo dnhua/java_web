@@ -1,5 +1,9 @@
 # XML 文件的简单解析
 
+## 一些有用的链接
+### [dom4j](https://dom4j.github.io/)
+### [jaxen](https://sourceforge.net/projects/jaxen/)
+
 ## 直接解析
 
 ```xml
