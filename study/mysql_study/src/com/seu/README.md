@@ -14,3 +14,6 @@ test_CRUD.java 为一个基本的mysql CRUD测试文件，主要是为了测试�
 **studentDao.java:** 操作学生数据库的接口。
 
 **studentDaoImpl.java:** 实现了上述接口。
+
+##### 下面是我的数据表，有id name以及age三个字段。
+![这是我的数据库图片](https://github.com/dnhua/java_web/blob/master/study/mysql_study/src/com/seu/data/1.PNG)
