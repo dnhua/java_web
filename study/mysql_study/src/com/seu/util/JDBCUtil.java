@@ -36,7 +36,7 @@ public class JDBCUtil {
 	}
 	
 	/**
-	 * ��ȡ���Ӷ���
+	 * 连接
 	 * @return
 	 */
 	public static Connection getConn(){

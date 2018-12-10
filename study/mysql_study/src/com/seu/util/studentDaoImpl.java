@@ -24,9 +24,9 @@ public class studentDaoImpl implements studentDao {
 	        st = conn.createStatement();
 	        String sql = "select * from t_stu";
 	        rs = st.executeQuery(sql);
-	        
+	        student stu = new student();
 	        while(rs.next()){
-	        	student stu = new student();	//要在循环里新建对象，不然每次引用的都是同一个值
+	        	stu = new student();	//这里一定要new一下
 	            stu.setid(rs.getInt("id"));
 	            stu.setage(rs.getInt("age"));
 	            stu.setname(rs.getString("name"));
