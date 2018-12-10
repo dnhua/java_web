@@ -19,7 +19,7 @@ public class parseDemo {
 			document = reader.read("src/xml/stus.xml");
 			//3 得到根元素
 			rootElement = document.getRootElement();
-			//4 得到根元素的所有子元素，返回的是一个list
+			//得到根元素的所有子元素，返回的是一个list
 			elements = rootElement.elements();
 			for (Element element : elements) {
 				System.out.println(element.getName());
