@@ -16,12 +16,12 @@
 
 先写一个login.jsp，放在WebContent目录下，最好修改下WEB-INF下的web.xml文件，使之默认可以索引到这个界面。
 
-![welcome](https://github.com/dnhua/java_web/blob/master/study/StudentManage/img/welcome.png)
+![welcome](https://github.com/dnhua/java_web/blob/master/study/StudentManage/img/welcome.PNG)
 
 此时若直接发布，会有中文乱码，解决方案：
 将编码换成 UTF-8 
 
-![loginjsp](https://github.com/dnhua/java_web/blob/master/study/StudentManage/img/loginjsp.png)
+![loginjsp](https://github.com/dnhua/java_web/blob/master/study/StudentManage/img/loginjsp.PNG)
 
 ```jsp
 <body>
@@ -34,11 +34,11 @@
 ```
 发布得到如图的结果：
 
-![logininterface](https://github.com/dnhua/java_web/blob/master/study/StudentManage/img/logininterface.png)
+![logininterface](https://github.com/dnhua/java_web/blob/master/study/StudentManage/img/logininterface.PNG)
 
 ## 创建用户表以及学生表
 
-![](https://github.com/dnhua/java_web/blob/master/study/StudentManage/img/usertable.png)  ![](https://github.com/dnhua/java_web/blob/master/study/StudentManage/img/studenttable.png)
+![](https://github.com/dnhua/java_web/blob/master/study/StudentManage/img/usertable.PNG)  ![](https://github.com/dnhua/java_web/blob/master/study/StudentManage/img/studenttable.PNG)
 
 ## 创建UserDao, 定义登录的方法
 
@@ -153,7 +153,7 @@ JSTL方式读取session中的数据。
 </table>
 ```
 
-![result1](https://github.com/dnhua/java_web/blob/master/study/StudentManage/img/result1.png)  
-![result2](https://github.com/dnhua/java_web/blob/master/study/StudentManage/img/result2.png)  
+![result1](https://github.com/dnhua/java_web/blob/master/study/StudentManage/img/result1.PNG)  
+![result2](https://github.com/dnhua/java_web/blob/master/study/StudentManage/img/result2.PNG)  
 
 # 知识点记录
