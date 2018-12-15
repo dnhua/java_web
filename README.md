@@ -8,8 +8,10 @@ study文件夹下是个人学习时写的一些demo。 mysql_study为mysql学习
 
 ## 文档链接
 
-### [Mysql学习](https://github.com/dnhua/java_web/tree/master/study/mysql_study)
+### study
 
-### [xml学习](https://github.com/dnhua/java_web/tree/master/study/parseXML)
+ #### [Mysql学习](https://github.com/dnhua/java_web/tree/master/study/mysql_study)
 
-### [StudentManage](https://github.com/dnhua/java_web/tree/master/study/StudentManage)
+ #### [xml学习](https://github.com/dnhua/java_web/tree/master/study/parseXML)
+
+ #### [StudentManage](https://github.com/dnhua/java_web/tree/master/study/StudentManage)
